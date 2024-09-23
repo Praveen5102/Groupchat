@@ -92,11 +92,21 @@ To run this project, you need to have:
 
 ## Screenshots
 
-- **USER 1**
-![sample Output](https://github.com/Praveen5102/Groupchat/blob/main/lib/assets/back.png)
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/Praveen5102/Groupchat/blob/main/lib/assets/output.jpeg" alt="sample Output" width="400"/>
+    </td>
+    <td>
+      <img src="https://github.com/Praveen5102/Groupchat/blob/main/lib/assets/output2.jpeg" alt="sample Output" width="400"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">User 1</td>
+    <td align="center">User 2</td>
+  </tr>
+</table>
 
-- **USER 2**
-![sample Output](https://github.com/Praveen5102/Groupchat/blob/main/lib/assets/icon.png)
 
 
 ## Contribution Guidelines
