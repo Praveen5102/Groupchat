@@ -34,8 +34,9 @@ To run this project, you need to have:
 ## Setup Instructions
 
 1. **Clone the Repository**
-   ```bash
+ ```bash
    git clone https://github.com/your-username/group_chat_app.git
+```
    
 2.**Navigate to the Project Directory**
    ```bash
@@ -60,7 +61,7 @@ To run this project, you need to have:
 
 ## Folder Structure
 ```bash
-   ├── android                    # Android specific files
+├── android                    # Android specific files
 ├── ios                        # iOS specific files
 ├── lib
 │   ├── models                 # Data models (e.g., user, message)
@@ -92,8 +93,10 @@ To run this project, you need to have:
 ## Screenshots
 
 - **USER 1**
+![sample Output](https://github.com/Praveen5102/Groupchat/blob/main/lib/assets/back.png)
 
 - **USER 2**
+![sample Output](https://github.com/Praveen5102/Groupchat/blob/main/lib/assets/icon.png)
 
 
 ## Contribution Guidelines
@@ -117,6 +120,7 @@ For any questions or feedback, feel free to reach out:
 - **Email**: praveenkumargone229@gmail.com
 - **GitHub**: https://github.com/praveen5102
 
+## 
 
 Thank you for checking out the Group Chat Application! We hope you enjoy using it as much as we enjoyed building it. 😊
 
