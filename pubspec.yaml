@@ -1,0 +1,43 @@
+name: chatgroup
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  intl: ^0.19.0
+  image_picker: ^1.1.2
+  firebase_storage: ^12.3.1
+cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_datetime_picker: ^1.5.1
+  firebase_core: ^3.5.0
+  firebase_auth: ^5.3.0
+  cloud_firestore: ^5.4.2
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Include your assets here using relative paths
+  assets:
+
+    - C:\flutterprojects\chatgroup\lib\assets\icon.png
+    - C:\flutterprojects\chatgroup\lib\assets\back.png
+
+  fonts:
+    - family: Cherry Swash
+      fonts:
+        - asset: lib\assets\CherrySwash-Regular.ttf
+        - asset: lib\assets\CherrySwash-Bold.ttf
+          weight: 700
