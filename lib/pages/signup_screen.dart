@@ -129,6 +129,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
   TextEditingController fullnameController = TextEditingController();
   TextEditingController phoneNumberController = TextEditingController();
   TextEditingController addressController = TextEditingController();
+  TextEditingController PostalController = TextEditingController();
+
 
   final FirebaseAuth _auth = FirebaseAuth.instance;
   bool _isPasswordVisible = false; // For password visibility toggle
@@ -170,13 +172,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
 
-                _buildTextField(label: 'Full Name', controller: fullnameController, hint: 'Enter your name here', isRequired: true),
+                _buildTextField(label: 'Full Name', controller: fullnameController, hint: 'john wick', isRequired: true),
 
 
-                _buildTextField(label: 'Phone Number', controller: phoneNumberController, hint: '10-digit phone number', keyboardType: TextInputType.phone, isRequired: true),
+                _buildTextField(label: 'Phone Number', controller: phoneNumberController, hint: '1234567895', keyboardType: TextInputType.phone, isRequired: true),
 
 
-                _buildTextField(label: 'Email Address', controller: emailController, hint: '@gmail.com', keyboardType: TextInputType.emailAddress, isRequired: true),
+                _buildTextField(label: 'Email Address', controller: emailController, hint: 'john@gmail.com', keyboardType: TextInputType.emailAddress, isRequired: true),
 
                 // Password
                 SizedBox(height: 4),
@@ -185,8 +187,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 TextFormField(
                   controller: passwordController,
                   decoration: InputDecoration(
-                    labelText: 'Password *',
+                    labelText: 'Password ',
+                    labelStyle: TextStyle(fontFamily: 'Roboto'),
                     hintText: 'Password must have: uppercase, number & special character',
+                    hintStyle: TextStyle(fontFamily: 'Roboto',color: Color(0xFFB0E0E6),),
                     border: OutlineInputBorder(),
                     suffixIcon: IconButton(
                       icon: Icon(_isPasswordVisible ? Icons.visibility : Icons.visibility_off),
@@ -207,7 +211,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
 
                 // Address
-                _buildTextField(label: 'Address', controller: addressController, hint: 'Enter your address', maxLines: 3, isRequired: true),
+                _buildTextField(label: 'Address', controller: addressController, hint: 'address 1', maxLines: 3, isRequired: true),
 
                 // Country Dropdown
                 _buildDropdown(
@@ -248,6 +252,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   },
                 ),
 
+                _buildTextField(label: 'Postal Code', controller: PostalController, hint: '123456', keyboardType: TextInputType.emailAddress, isRequired: true),
+
                 // Date of Birth
                 SizedBox(height: 4),
                 Text('Date of Birth', style: TextStyle(color: Color(0xFF438E96), fontFamily: 'Roboto')),
@@ -255,8 +261,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 TextFormField(
                   controller: dobController,
                   decoration: InputDecoration(
-                    labelText: 'Date of Birth *',
+                    labelText: 'Date of Birth ',
+                    labelStyle: TextStyle(fontFamily: 'Roboto'),
                     hintText: 'DD/MM/YYYY',
+                    hintStyle: TextStyle(fontFamily: 'Roboto', color: Color(0xFFB0E0E6),),
                     border: OutlineInputBorder(),
                     suffixIcon: IconButton(
                       icon: Icon(Icons.calendar_today),

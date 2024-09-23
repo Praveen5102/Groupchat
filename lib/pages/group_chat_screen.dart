@@ -80,6 +80,7 @@ class _GroupChatScreenState extends State<GroupChatScreen> {
                     controller: _messageController,
                     decoration: InputDecoration(
                       hintText: 'Type a message',
+                      hintStyle: TextStyle(fontFamily: 'Roboto'),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
                       ),
