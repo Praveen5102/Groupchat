@@ -35,12 +35,12 @@ To run this project, you need to have:
 
 1. **Clone the Repository**
  ```bash
-   git clone https://github.com/your-username/group_chat_app.git
+   git clone https://github.com/praveen5102/Groupchat.git
 ```
    
 2.**Navigate to the Project Directory**
    ```bash
-   cd group_chat_app
+   cd Groupchat
 ```
 3.**Install Dependencies Run the following command to install all necessary dependencies**:
    ```bash
